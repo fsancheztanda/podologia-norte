@@ -1,0 +1,34 @@
+:root {
+  --primary: #008B8B;
+  --primary-hover: #007070;
+  --bg-soft: #F0FFFF;
+  --text-main: #333;
+  --text-light: #666;
+  --white: #ffffff;
+  --border: #ddd;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-soft);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
