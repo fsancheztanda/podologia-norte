@@ -1,3 +1,5 @@
+console.log('API URL:', import.meta.env.VITE_API_URL);
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { 
