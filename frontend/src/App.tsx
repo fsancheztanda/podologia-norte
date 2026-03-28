@@ -66,8 +66,10 @@ interface FinancialReport {
   }>;
 }
 
-const API_BASE = 'http://localhost:8000/api';
-
+const API_BASE = import.meta.env.VITE_API_URL 
+  ? `${import.meta.env.VITE_API_URL}/api`
+  : 'http://localhost:8000/api';
+  
 function App() {
   const [view, setView] = useState<'public' | 'login' | 'admin'>('public');
   const [adminSubView, setAdminSubView] = useState<'agenda' | 'patients' | 'finance'>('agenda');
